@@ -10,7 +10,7 @@ Run sequence for manual setup and download of data (no vagrant provisioning):
 ## Vagrant
 The Vagrant file has to be placed in your ~/vagrant folder. Any existing Vagrantfile should be deleted.
 Suitable vagrant boxes can be found at -> http://www.vagrantbox.es/.
-Additional info on running scripts at vagrant up can be found here -> https://www.vagrantup.com/docs/provisioning/shell.html
+Additional info on running scripts at vagrant up can be found here -> https://www.vagrantup.com/docs/provisioning/shell.html.
 The commands to initialize and provision a VM are:
 1) vagrant box add {title} {url}
 2) vagrant init {title}
