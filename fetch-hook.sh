@@ -36,9 +36,12 @@ filename=$time$suffix
 url='http://tgftp.nws.noaa.gov/data/observations/metar/cycles/'
 #Form the URL for the correct file corresponding to current time
 filelock=$url$filename
-#Call out php that writes to database and pass it parameters
+#Create the daily directory and traverse to it
 cd $HOME && mkdir $folder
 cd $HOME/$folder
+#Download the information
 curl -o $filename $filelock
+#Tranverse to the php script
 cd $HOME/scripting
+#Call out php that writes to database and pass it parameters
 php parse.php $MAINDB $PASSDB $folder $filename
