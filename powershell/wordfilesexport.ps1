@@ -2,6 +2,6 @@
         Get-ChildItem -Path C:\ -Include *.doc,*.docx -File -Recurse -ErrorAction SilentlyContinue `
             | Select-Object FullName `
             | ConvertTo-HTML `
-            | Out-file -filepath C:\Users\Johny\Desktop\School\powershell\report.html
+            | Out-file -filepath C:\Users\abc\wordreport.html
     }
 Get-Job | Wait-Job
