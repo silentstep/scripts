@@ -13,4 +13,4 @@ The commands to initialize and provision a VM are:
 1) vagrant box add {title} {url}
 2) vagrant init {title}
 3) vagrant up
-
+Suitable vagrant boxes can be found at http://www.vagrantbox.es/
