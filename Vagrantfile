@@ -11,9 +11,9 @@ Vagrant.configure("2") do |config|
 # Network settings: forward ports
   config.vm.network "forwarded_port", guest: 80, host: 8080
 # Network settings: setup vlan
-  config.vm.network "private_network", ip: "192.168.30.10"
+  config.vm.network "private_network", ip: "192.168.30.20"
 # Syncronise folders on host nad guest for easy file transfer
-  config.vm.synced_folder "www/", "/var/www/html", owner:"root", group: "root"
+  config.vm.synced_folder "scripting/", "/home/vagrant/scripting", owner:"vagrant", group: "vagrant"
 # Provision the VM with custom software
   # apache2
   # php7
